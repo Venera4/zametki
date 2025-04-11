@@ -1,15 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Venera's diary</title>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Rando en Bretagne</title>
+   <style>
+      body {
+         margin: 0;
+         font-family: Arial, sans-serif;
+         background-color: #f9f9f9;
+         color: #333;
+      }
+
+      header {
+         background: #0077b6;
+         color: white;
+         padding: 1rem;
+         display: flex;
+         align-items: center;
+      }
+
+      header img {
+         height: 50px;
+         margin-right: 1rem;
+      }
+
+      nav a {
+         color: white;
+         margin-right: 1rem;
+         text-decoration: none;
+      }
+
+      .container {
+         max-width: 800px;
+         margin: 2rem auto;
+         padding: 1rem;
+         background: white;
+         border-radius: 8px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2 {
+         color: #023e8a;
+      }
+
+      footer {
+         text-align: center;
+         margin: 2rem 0;
+         color: #777;
+      }
+   </style>
 </head>
 
 <body>
-   <h1>First line</h1>
+   <header>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mer_Bretagne.jpg" alt="Logo mer" />
+      <div>
+         <h1>Rando en Bretagne</h1>
+         <nav>
+            <a href="#">Accueil</a>
+            <a href="#">À propos</a>
+         </nav>
+      </div>
+   </header>
 
+   <div class="container">
+      <h2>À la découverte de Lannion</h2>
+      <p><strong>Date :</strong> 11 avril 2025</p>
+      <p>
+         Située dans les Côtes-d’Armor, Lannion est une charmante petite ville bretonne, idéale pour démarrer une
+         randonnée sur la Côte de Granit Rose. En vous promenant dans le centre historique, vous découvrirez des maisons
+         à colombages, des ruelles pavées et une atmosphère typiquement bretonne.
+      </p>
+      <p>
+         À ne pas manquer : le sentier des Douaniers (GR34), accessible depuis la côte toute proche, qui offre des
+         panoramas magnifiques sur la mer et les rochers de granit rose. C’est un point de départ idéal pour explorer
+         Ploumanac’h ou Trégastel.
+      </p>
+      <p>
+         Lannion est aussi bien desservie par le train, ce qui en fait une étape pratique pour les voyageurs sans
+         voiture.
+      </p>
+   </div>
+
+   <footer>
+      © 2025 - Rando en Bretagne
+   </footer>
 </body>
 
 </html>
