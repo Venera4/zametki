@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>German Notes with Tabs</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    /* Tab container */
+    .tabs {
+      display: flex;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 1rem;
+    }
+
+    /* Hide the radio buttons */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Style tab labels */
+    .tabs label {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      background: #e0e0e0;
+      margin-right: 5px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .tabs label:hover {
+      background: #d0d0d0;
+    }
+
+    /* Show active tab */
+    input[type="radio"]:checked + label {
+      background: #ffffff;
+      border-bottom: 2px solid white;
+    }
+
+    /* Tab content areas */
+    .tab-content {
+      display: none;
+      padding: 1rem;
+      background: white;
+      border: 1px solid #ccc;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+    }
+
+    /* Show selected content */
+    #tab-reisen:checked ~ #content-reisen,
+    #tab-schule:checked ~ #content-schule,
+    #tab-essen:checked ~ #content-essen,
+    #tab-wohnen:checked ~ #content-wohnen {
+      display: block;
+    }
+
+    /* Reusable content styles */
+    .vocab {
+      background-color: #eef;
+      border-left: 4px solid #3366cc;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .note {
+      background-color: #fffae6;
+      border-left: 4px solid #f1c40f;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+    }
+
+    section h2 {
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📝 German Class Notes</h1>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <input type="radio" name="tab" id="tab-reisen" checked>
+    <label for="tab-reisen">✈️ Reisen</label>
+
+    <input type="radio" name="tab" id="tab-schule">
+    <label for="tab-schule">🏫 Schule</label>
+
+    <input type="radio" name="tab" id="tab-essen">
+    <label for="tab-essen">🍽️ Essen</label>
+
+    <input type="radio" name="tab" id="tab-wohnen">
+    <label for="tab-wohnen">🏠 Wohnen</label>
+  </div>
+
+  <!-- Tab Content -->
+  <div class="tab-content" id="content-reisen">
+    <section>
+      <h2>Vokabeln</h2>
+      <div class="vocab"><strong>der Zug</strong> – the train</div>
+      <div class="vocab"><strong>das Flugzeug</strong> – the airplane</div>
+    </section>
+
+    <section>
+      <h2>Hausaufgaben</h2>
+      <div class="note">Schreibe einen kurzen Text über deine letzte Reise.</div>
+    </section>
+
+    <section>
+      <h2>Notizen</h2>
+      <p>Wir haben Verkehrsmittel und Reiseziele besprochen.</p>
+    </section>
+  </div>
+
+  <div class="tab-content" id="content-schule">
+    <section>
+      <h2>Vokabeln</h2>
+      <div class="vocab"><strong>die Klasse</strong> – the class</div>
+      <div class="vocab"><strong>der Lehrer</strong> – the teacher</div>
+    </section>
+
+    <section>
+      <h2>Hausaufgaben</h2>
+      <div class="note">Bereite einen kurzen Vortrag über deine Schule vor.</div>
+    </section>
+
+    <section>
+      <h2>Notizen</h2>
+      <p>Besprochen: Schulfächer, Tagesablauf, Lieblingsfächer.</p>
+    </section>
+  </div>
+
+  <div class="tab-content" id="content-essen">
+    <section>
+      <h2>Vokabeln</h2>
+      <div class="vocab"><strong>das Brot</strong> – the bread</div>
+      <div class="vocab"><strong>die Suppe</strong> – the soup</div>
+    </section>
+
+    <section>
+      <h2>Notizen</h2>
+      <p>Essgewohnheiten in Deutschland und typische Gerichte.</p>
+    </section>
+  </div>
+
+  <div class="tab-content" id="content-wohnen">
+    <section>
+      <h2>Vokabeln</h2>
+      <div class="vocab"><strong>die Wohnung</strong> – the apartment</div>
+      <div class="vocab"><strong>das Haus</strong> – the house</div>
+    </section>
+
+    <section>
+      <h2>Notizen</h2>
+      <p>Wie man seine Wohnung beschreibt: Zimmer, Möbel, Umgebung.</p>
+    </section>
+  </div>
+
+</body>
+</html>

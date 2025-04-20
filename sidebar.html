@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+   <meta charset="UTF-8">
+   <title>German Class Notes</title>
+   <style>
+      body {
+         margin: 0;
+         font-family: sans-serif;
+         display: flex;
+         height: 100vh;
+      }
+
+      /* Sidebar styles */
+      nav {
+         width: 200px;
+         background-color: #2c3e50;
+         color: white;
+         padding: 1rem;
+         position: fixed;
+         height: 100%;
+         overflow-y: auto;
+      }
+
+      nav h2 {
+         font-size: 1.2rem;
+         margin-bottom: 1rem;
+      }
+
+      nav a {
+         display: block;
+         color: white;
+         text-decoration: none;
+         margin-bottom: 0.5rem;
+         padding: 0.3rem;
+         border-radius: 4px;
+      }
+
+      nav a:hover {
+         background-color: #34495e;
+      }
+
+      /* Main content */
+      main {
+         margin-left: 220px;
+         padding: 2rem;
+         flex-grow: 1;
+         background-color: #f9f9f9;
+         overflow-y: auto;
+      }
+
+      section {
+         margin-bottom: 3rem;
+         padding: 1rem;
+         background-color: #fff;
+         border-radius: 8px;
+         border: 1px solid #ddd;
+      }
+
+      h1,
+      h2 {
+         color: #2c3e50;
+      }
+
+      .vocab,
+      .note {
+         padding: 0.5rem;
+         margin: 0.5rem 0;
+         border-left: 4px solid;
+      }
+
+      .vocab {
+         background-color: #eef;
+         border-color: #3366cc;
+      }
+
+      .note {
+         background-color: #fffae6;
+         border-color: #f1c40f;
+      }
+
+      ul {
+         margin-left: 1.5rem;
+      }
+   </style>
+</head>
+
+<body>
+
+   <!-- Sidebar -->
+   <nav>
+      <h2>📚 Themen</h2>
+      <a href="#reisen">✈️ Reisen</a>
+      <a href="#schule">🏫 Schule</a>
+      <a href="#essen">🍽️ Essen</a>
+      <a href="#wohnen">🏠 Wohnen</a>
+      <!-- Add more links as needed -->
+   </nav>
+
+   <!-- Main content -->
+   <main>
+      <h1>German Class Notes</h1>
+
+      <!-- Reisen -->
+      <section id="reisen">
+         <h2>✈️ Reisen (Travel)</h2>
+
+         <h3>Vokabeln</h3>
+         <div class="vocab"><strong>der Zug</strong> – the train</div>
+         <div class="vocab"><strong>das Flugzeug</strong> – the airplane</div>
+
+         <h3>Hausaufgaben</h3>
+         <div class="note">Schreibe einen kurzen Text über deine letzte Reise.</div>
+
+         <h3>Notizen</h3>
+         <p>Heute haben wir über Verkehrsmittel gesprochen und wie man Fahrkarten kauft.</p>
+      </section>
+
+      <!-- Schule -->
+      <section id="schule">
+         <h2>🏫 Schule (School)</h2>
+
+         <h3>Vokabeln</h3>
+         <div class="vocab"><strong>die Klasse</strong> – the class</div>
+         <div class="vocab"><strong>der Lehrer</strong> – the teacher</div>
+
+         <h3>Hausaufgaben</h3>
+         <div class="note">Vokabeltest über Schulfächer am Montag.</div>
+
+         <h3>Notizen</h3>
+         <p>Besprochen: die Schulstruktur in Deutschland (Grundschule, Gymnasium, usw.).</p>
+      </section>
+
+      <!-- Essen -->
+      <section id="essen">
+         <h2>🍽️ Essen (Food)</h2>
+
+         <h3>Vokabeln</h3>
+         <div class="vocab"><strong>das Brot</strong> – the bread</div>
+         <div class="vocab"><strong>die Suppe</strong> – the soup</div>
+
+         <h3>Notizen</h3>
+         <p>Wir haben verschiedene Essgewohnheiten in Deutschland und Österreich verglichen.</p>
+      </section>
+
+      <!-- Wohnen -->
+      <section id="wohnen">
+         <h2>🏠 Wohnen (Living)</h2>
+
+         <h3>Vokabeln</h3>
+         <div class="vocab"><strong>die Wohnung</strong> – the apartment</div>
+         <div class="vocab"><strong>das Haus</strong> – the house</div>
+
+         <h3>Notizen</h3>
+         <p>Heute: Beschreibung der eigenen Wohnung – Zimmer, Möbel, Nachbarschaft.</p>
+      </section>
+
+   </main>
+</body>
+
+</html>
