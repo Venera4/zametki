@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>German Class Notes</title>
+   <style>
+      body {
+         font-family: sans-serif;
+         background-color: #f8f9fa;
+         padding: 2rem;
+         max-width: 800px;
+         margin: auto;
+      }
+
+      h1 {
+         text-align: center;
+         color: #2c3e50;
+      }
+
+      textarea {
+         width: 100%;
+         height: 400px;
+         padding: 1rem;
+         font-size: 1rem;
+         border-radius: 8px;
+         border: 1px solid #ccc;
+         resize: vertical;
+      }
+
+      button {
+         margin-top: 1rem;
+         padding: 0.5rem 1rem;
+         font-size: 1rem;
+         border: none;
+         border-radius: 5px;
+         background-color: #3498db;
+         color: white;
+         cursor: pointer;
+      }
+
+      button:hover {
+         background-color: #2980b9;
+      }
+   </style>
+</head>
+
+<body>
+   <h1>📝 German Class Notes</h1>
+
+   <textarea id="notes" placeholder="Schreib deine Notizen hier..."></textarea>
+   <br>
+   <button onclick="saveNotes()">💾 Save Notes</button>
+
+   <script>
+      // Load notes from localStorage
+      document.getElementById('notes').value = localStorage.getItem('germanNotes') || '';
+
+      function saveNotes() {
+         const text = document.getElementById('notes').value;
+         localStorage.setItem('germanNotes', text);
+         alert('Notes saved!');
+      }
+   </script>
+</body>
+
+</html>
